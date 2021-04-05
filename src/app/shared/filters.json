@@ -1,0 +1,110 @@
+{
+    "region": [
+        {
+            "value": "JAPAC",
+            "selected": false,
+            "module": "region",
+            "index":0
+        },
+        {
+            "value": "India",
+            "selected": false,
+            "module": "region",
+            "index":1
+        },
+        {
+            "value": "ASEAN",
+            "selected": false,
+            "module": "region",
+            "index":2
+        },
+        {
+            "value": "China",
+            "selected": false,
+            "module": "region",
+            "index":3
+        },
+        {
+            "value": "ANZ",
+            "selected": false,
+            "module": "region",
+            "index":4
+        },
+        {
+            "value": "Japan",
+            "selected": false,
+            "module": "region",
+            "index":5
+        },
+        {
+            "value": "Korea",
+            "selected": false,
+            "module": "region",
+            "index":6
+        },
+        {
+            "value": "HKTW",
+            "selected": false,
+            "module": "region",
+            "index":7
+        }
+    ],
+    "lob": [
+        {
+            "value": "APPS",
+            "selected": false,
+            "module": "lob",
+            "index":0
+        },
+        {
+            "value": "TECH",
+            "selected": false,
+            "module": "lob",
+            "index":1
+        },
+        {
+            "value": "Systems",
+            "selected": false,
+            "module": "lob",
+            "index":2
+        },
+        {
+            "value": "Consuting",
+            "selected": false,
+            "module": "lob",
+            "index":3
+        }
+    ],
+    "type": [
+        {
+            "value": "Videos",
+            "selected": false,
+            "module": "type",
+            "index":0
+        },
+        {
+            "value": "Documents",
+            "selected": false,
+            "module": "type",
+            "index":1
+        },
+        {
+            "value": "Webpage",
+            "selected": false,
+            "module": "type",
+            "index":2
+        },
+        {
+            "value": "Links",
+            "selected": false,
+            "module": "type",
+            "index":3
+        },
+        {
+            "value": "Photos",
+            "selected": false,
+            "module": "type",
+            "index":4
+        }
+    ]
+}

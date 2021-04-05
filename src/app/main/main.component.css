@@ -1,0 +1,129 @@
+.mat-button{
+    color: white;
+    background-color: #699e68;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .content {
+    padding: 20px 0;
+  }
+  
+  .filter-section{
+    background-color: #403d38;
+    color: white;
+    padding: 15px 10px 10px 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .filter-label{
+    color: #fecc49;
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+
+  }
+  .filter-items {
+    width: 50%;
+    margin-bottom: 8px;
+}
+  ::ng-deep .ng-trigger.ng-trigger-animation.ng-star-inserted{
+    background-color:#fecc49 ;
+    font-size: 10px;
+    font-weight: 800;
+    color: black;
+    display: block;
+    border-radius: 0px;
+}
+  
+  .container {
+    padding: 6%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.filters {
+  width: 29%;
+  float: left;
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}  
+.submit-section{
+  width: 100%;
+}
+
+.submit-filter{
+  color: white;
+    background-color: #699e68;
+    display: flex;
+    justify-content: center;
+    float: right;
+    left: 0;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.display-filters{
+  background-color: white;
+  color: black;
+  width: 100%;
+  display: flex;
+  padding: 25px;
+  flex-wrap: wrap;
+}
+.filter-select{
+  background-image: url('../../assets/images/drop-down-arrow.png');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  color: #699e68;
+  background-position: right;
+  transform: none;
+  left:0;
+  font-size: 18px;
+  line-height: 50px;
+  padding-left: 0;
+}
+
+.mt-50{
+  margin-top: 50px;
+}
+
+.ml-auto{
+  margin-left: auto;
+}
+
+.filter-head{
+  line-height: 45px;
+  font-size: 25px;
+  display: block;
+}
+
+.mr-20{
+  margin-right: 20px;
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .filters {
+    width: 100%;
+  }
+
+  .ml-auto{
+    margin-left: 0;
+  }
+
+}
+::ng-deep .ng2-tag-input{
+  border-bottom: 0 !important;
+}
+

@@ -1,0 +1,46 @@
+<div class="container">
+<div class="display-filters">
+    <div class="filter-head mr-20">Discover</div>
+    <div>
+        <tag-input [(ngModel)]="filterObject" [displayBy]="'value'" [onRemoving]="onRemove"
+        [secondaryPlaceholder]="''"></tag-input>
+    </div>
+    <div class="ml-auto">
+        <button class='filter-select' mat-button (click)="showFilters()">SELECT FILTER</button>
+    </div>  
+</div>
+<div class="filter-section" *ngIf='showFilter' [@inOutAnimation]>
+    <div class="filters">
+        <label class="filter-label">Regions</label>
+        <div class="filter-items" *ngFor="let item of regionArray">
+            <app-check-box [checkBoxLabel]="item" (checkBoxSelect)="checkBoxSelect($event)"></app-check-box>
+        </div>
+    </div>
+    <div class="filters">
+        <label class="filter-label">LOBs</label>
+        <div class="filter-items" *ngFor="let item of lobArray">
+            <app-check-box [checkBoxLabel]="item" (checkBoxSelect)="checkBoxSelect($event)"></app-check-box>
+        </div>
+    </div>
+    <div class="filters">
+        <label class="filter-label">Asset Type</label>
+        <div class="filter-items" *ngFor="let item of assetTypeArray">
+            <app-check-box [checkBoxLabel]="item" (checkBoxSelect)="checkBoxSelect($event)"></app-check-box>
+        </div>
+    </div>
+    <div class="submit-section">
+        <button mat-button class="submit-filter mt-50" (click)="displayFilteredRecords()">Submit</button>
+    </div>
+</div>
+
+<div class="content" >
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" fxFlex.lg="25%" fxFlex.md="25%"
+            *ngFor="let item of displayTiles"  [@inOutAnimation]>
+            <app-post-tile [posts]="item" (upVoteItem)="upvote($event)"></app-post-tile>
+
+        </div>
+    </div>
+    <button mat-button (click)="displayRecords()" class="mt-50" disabled="{{disableLoad}}">Load More</button>
+</div>
+</div>
